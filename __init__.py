@@ -1,4 +1,4 @@
-```python
+
 import aiohttp
 import discord
 import random2
@@ -11,4 +11,4 @@ async def pyrandmeme():
             res = await r.json()
             pymeme.set_image(url=res['data']['children'][random2.randint(0, 25)]['data']['url'])
             return pymeme
-        await pyrandmeme()```
+        await pyrandmeme()
